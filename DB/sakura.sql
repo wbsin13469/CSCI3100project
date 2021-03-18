@@ -83,6 +83,7 @@ CREATE TABLE `user` (
   `userID` int(10) NOT NULL,
   `username` varchar(20) NOT NULL,
   `password` varchar(15) NOT NULL,
+  `email` varchar(50) NOT NULL,
   `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `validation` tinyint(1) NOT NULL,
   `preferenceID` int(10) NOT NULL,
