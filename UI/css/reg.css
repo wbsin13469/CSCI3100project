@@ -2,6 +2,7 @@
     height: 100%;
     background-repeat: no-repeat;
     background-color: #d3d3d3;
+    font-family: 'Playfair Display', serif;
 }
 
 .main{
@@ -33,7 +34,8 @@ input::-webkit-input-placeholder {
 }
 
 .main-login{
-    background-color: #fff;
+   color: #fff;
+    background-color: #0062cc;
    /* shadows and rounded borders */
    -moz-border-radius: 2px;
    -webkit-border-radius: 2px;
@@ -61,4 +63,5 @@ input::-webkit-input-placeholder {
 .login-register{
    font-size: 11px;
    text-align: center;
+   color: #fff;
 }
