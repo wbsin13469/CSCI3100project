@@ -126,8 +126,7 @@ ALTER TABLE `preference`
 -- 資料表索引 `user`
 --
 ALTER TABLE `user`
-  ADD PRIMARY KEY (`userID`),
-  ADD KEY `preferenceID` (`preferenceID`);
+  ADD PRIMARY KEY (`userID`);
 
 --
 -- 已匯出資料表的限制(Constraint)
@@ -151,12 +150,6 @@ ALTER TABLE `conversation`
 --
 ALTER TABLE `matching`
   ADD CONSTRAINT `matching_ibfk_1` FOREIGN KEY (`preferenceID`) REFERENCES `preference` (`preferenceID`);
-
---
--- 資料表的 Constraints `user`
---
-ALTER TABLE `user`
-  ADD CONSTRAINT `user_ibfk_1` FOREIGN KEY (`preferenceID`) REFERENCES `preference` (`preferenceID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
